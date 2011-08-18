@@ -29,8 +29,10 @@ var spellList = {
 		if (spellList.list != null) {				
 			$.each(spellList.list, spellList.createItem);
 			// $('#spellList').trigger('create');
-			// $('#spellList').page();
-			// alert($('#list').listview);
+			// $('#spellList').page();			
+			/*alert($('#list'));
+			$('#list').listview();
+			alert($('#list').listview);*/
 			$('#list').listview('refresh');				
 		}
 	},
