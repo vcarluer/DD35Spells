@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Sorts D&D 3.5</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Nouveau personnage</h1>
+	</div><!-- /header -->
+
+		<div data-role="content">	
+			<div data-role="fieldcontain">
+	    		<label for="name">Nom :</label>
+	    		<input type="text" name="name" id="name" value=""  />
+			</div>
+			<div data-role="fieldcontain">
+				<label for="class-choice" class="select">Classe :</label>
+				<select name="class-choice" id="class-choice" data-native-menu="false">
+					<option>Choisissez</option>
+					<option value="Magicien">Magicien</option>
+					<option value="Druide">Druide</option>
+					<option value="Prêtre">Prêtre</option>					
+				</select>
+			</div>
+			
+			<div data-role="fieldcontain">
+				<label for="level">Niveau :</label>
+			 	<input type="range" name="level" id="level" value="1" min="1" max="9" />
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Spécialiste</h3>
+				<div data-role="fieldcontain">
+					<label for="spe-choice" class="select">Spécialisation :</label>
+					<select name="spe-choice" id="spe-choice" data-native-menu="false">
+						<option>Choisissez</option>
+						<option value="Invocation">Invocation</option>
+						<option value="Enchantement">Enchantement</option>
+						<option value="Abjuration">Abjuration</option>					
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="opp-choice" class="select">Opposition :</label>
+					<select name="opp-choice" id="opp-choice" data-native-menu="false">
+						<option>Choisissez</option>
+						<option value="Invocation">Invocation</option>
+						<option value="Enchantement">Enchantement</option>
+						<option value="Abjuration">Abjuration</option>					
+					</select>
+				</div>
+			</div>
+		
+		<a href="#" data-role="button" data-icon="plus" data-inline="true" data-theme="b">Ajouter</a>		
+	</div><!-- /content -->	
+</div><!-- /page -->
+
+</body>
+</html>
